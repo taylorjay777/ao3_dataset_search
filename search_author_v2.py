@@ -10,6 +10,7 @@ from tqdm import tqdm
 target_author = input("Type Author Name Here:")  # Change as needed
 input_folder = input("Paste the file directory where dataset is stored here:")  # Current directory
 output_file = input_folder + "/fic_list.jsonl"
+max_workers = 6  # Adjust based on how powerful your Computer is (1 Worker per core recommended)
 
 # === CLEANING FUNCTION ===
 def clean_author(author_field):
